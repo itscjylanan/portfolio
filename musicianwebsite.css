@@ -1,0 +1,168 @@
+.musicianwebsite {
+    text-align: center;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 40px;
+  }
+  
+  .musician-titledescription {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 130px;
+    }
+  
+    .musician-image-container {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 50px;
+      column-gap: 70px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+    
+    .musician-image-container1 {
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+      gap: 50px;
+      column-gap: 70px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+  
+    /* Hover effect for photography images */
+  /* Common styles for image containers */
+  .musician-image-wrapper {
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #a3a3a3;
+  }
+  
+  .home-musician {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .music-musician {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .video-musician {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .home-musician {
+    width: 500px;
+    height: 888px;
+  }
+  
+  .music-musician {
+    width: 562px;
+    height: 887px;
+  }
+  
+  .video-musician {
+    width: 500px;
+    height: 953px;
+  }
+  
+  /* Hover effect */
+  .musician-image-wrapper:hover .overlay {
+    opacity: 1;
+  }
+  
+  
+  .musician-image-wrapper:hover .home-musician {
+    filter: brightness(50%);
+    transform: scale(1.1);
+  }
+  
+  .musician-image-wrapper:hover .music-musician {
+    filter: brightness(50%);
+    transform: scale(1.1);
+  }
+  
+  .musician-image-wrapper:hover .video-musician {
+    filter: brightness(50%);
+    transform: scale(1.1);
+  }
+  
+  
+  .musician-image-wrapper:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .musician-image-wrapper {
+    animation: mainappear linear; 
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    }
+
+    @keyframes mainappear {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+
+@media (max-width: 768px) {
+  /* MUSICIAN WEBSITE */
+.musician-window {
+   width: 510px;
+
+}
+
+.home-musician {
+  width: 510px;
+  height: 888px;
+}
+
+.music-musician {
+  width: 510px;
+  height: 805px;
+}
+
+.video-musician {
+  width: 510px;
+  height: 973px;
+}
+
+
+.musician-image-container {
+ grid-template-columns: 1fr; /* One column layout */
+ gap: 50px; /* Adjust gap for spacing between images in mobile view */
+ margin-bottom: 50px;
+ }
+
+
+.musician-image-container1 {
+ grid-template-columns: 1fr; /* One column layout */
+ gap: 50px; /* Adjust gap for spacing between images in mobile view */
+}
+
+
+}

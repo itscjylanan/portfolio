@@ -1,0 +1,347 @@
+@charset "utf-8";
+.container {
+  display: flex;  /* Flexbox for overall layout */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.top-bar {
+  width: 100%;
+  background-color: #1F1F1F; /* Background color for the rectangle */
+  position: fixed;
+	color: #FFFFFF; 
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.wrapper {
+  margin-bottom: 120px; /* Add margin-bottom to the wrapper */
+}
+
+.text-area {
+  padding: 10px;  /* Add some padding for spacing */
+  font-family: sans-serif, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button-area {
+  flex: 1;  /* Make button area flexible to fill space */
+  display: flex;  /* Flexbox for buttons on the same line */
+  justify-content: center;  /* Center buttons horizontally */
+  margin-left: 25px;
+}
+
+button {
+  background-color: transparent;  /* Remove button background */
+  border: none;  /* Remove button border */
+  padding: 15px 10px;  /* Add some padding for text */
+  color: white;  /* Inherit text color from parent */
+  cursor: pointer;  /* Indicate clickable element */
+  margin-right: 30px;  /* Add margin between buttons */
+  font-family: sans-serif, sans-serif;
+  font-size: 12px;
+}
+
+.bold-button {
+  font-weight: bold;  /* Make this button bold */
+		cursor:default;
+}
+
+.content {
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  animation: fadeUp 0.2s ease-in-out forwards !important;
+  width: 100%;
+}
+
+.content-wrapper {
+  height: 1px;  /* Full viewport height */
+  display: flex;  /* Enable flexbox */
+  justify-content: center;  /* Center horizontally */
+  align-items: center;  /* Center vertically */
+  width: 100%;
+
+}
+
+.rectangle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-part {
+  width: 100%;
+}
+.fullname {
+  margin-top: 10px;
+	display: flex;
+	justify-content: center;
+  align-items: center;
+	font-weight: bold;
+	font-size: 40px;
+	font-family: sans-serif;
+
+}
+
+.description1-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.description1 {
+  width: 700px;
+	display: flex;
+	justify-content: center;
+	font-size: 17px;
+	font-family: sans-serif;
+	color: #424242;
+	line-height: 30px;
+	text-align: center;
+
+}
+
+.rectangle {
+  border-radius: 40px;
+	width: 1000px; /* Set fixed width */
+	margin-top: 80px;
+	background-color: #F5F5F5;
+	padding-top: 80px;
+  padding-bottom: 80px;
+  padding-right: 30px;
+  padding-left: 30px;
+	display: flex; /* Use Flexbox to center content */
+	justify-content: center; /* Center content horizontally */
+  align-items: center;
+  margin-bottom: 50px;
+
+}
+
+.description2 {
+display: grid;
+	grid-template-columns: 1fr 1fr; /* Creates 2 equal-width columns */
+	gap: 40px; /* Adjust as needed for spacing between columns */
+	max-width: 1200px; /* Optional: set a maximum width for the grid */
+	width: 100%; /* Ensure the grid takes up full width of its container */
+
+}
+
+.bolddescription {
+
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #424242;
+	font-size: 20px;
+}
+
+.normaldescription {
+	font-family: sans-serif;
+	line-height: 30px;
+	color: #565656;
+	grid-column: 1; /* Place in the first column */
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* Align text to the start of the column */
+	align-items:left;
+	margin-left: 100px;
+}
+
+.picture {
+	display: flex;
+	justify-content: center; /* Center the image horizontally */
+	align-items: center; /* Center the image vertically */
+	grid-column: 2; 
+	margin-right: 100px;
+}
+
+.picture img {
+	width: 366px; /* Make sure the image is responsive */
+	height: 366px;
+	border-radius: 10px;
+}
+
+.rectangle1 {
+  margin-top: 60px;
+	background-color: #F5F5F5;
+  width: 100%;
+
+}
+
+
+.centered-container {
+  display: flex; /* Use Flexbox to center its content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.description3 {
+  width: 850px; /* Set the desired width */
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  text-align: center; /* Center text horizontally */
+  line-height: 30px;
+  color: #606060;
+  font-size: 14px;
+  animation: fadeDown 1.2s ease-out;
+  margin-top: 70px; /* Remove margin if using flexbox to center vertically */
+}
+
+
+  .footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #606060; /* Adjust text color as needed */
+  }
+  
+  .footer-line {
+    width: 80%;
+    height: 1px;
+    background-color: #B9B9B9; /* Adjust the line color as needed */
+    margin: 0 auto;
+  }
+  
+  .footer-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 10px auto 0;
+    font-family: sans-serif;
+    flex-wrap: wrap; /* Ensure that elements can wrap to the next line */
+  }
+  
+  .footer-content .left-text,
+  .footer-content .right-text {
+    flex: 1;
+    font-size: 11px; /* Default font size */
+  }
+  
+  .footer-content .left-text {
+    text-align: left;
+  }
+  
+  .footer-content .right-text {
+    text-align: right;
+  }
+
+  .line {
+    background-color: #B9B9B9;  /* Set background color for the line */
+    height: 1px;            /* Set line height (thickness) */
+    width: 1286px;            /* Set line width to span full width */
+    margin: 10px 0;         /* Add some margin for spacing */
+    margin: auto;  
+  }
+
+/* Fade-up animation for content */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  @media (max-width: 768px) {
+    .fullname {
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .description1 {
+      font-size: 11px;
+      width: 450px;
+      line-height: 25px;
+    }
+    .description3 {
+      font-size: 8px;
+      line-height: 15px;
+      width: 500px;
+      margin-top: 40px;
+    }
+
+    .rectangle {
+      border-radius: 40px;
+      width: 550px; /* Set fixed width */
+      margin-top: 50px;
+      background-color: #F5F5F5;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-right: 30px;
+      padding-left: 30px;
+      display: flex; /* Use Flexbox to center content */
+      justify-content: center; /* Center content horizontally */
+      align-items: center;
+      margin-bottom: 20px;
+      animation: fadeDown 0.9s ease-out;
+    }
+    
+    .description2 {
+    display: grid;
+      grid-template-columns: 1fr 1fr; /* Creates 2 equal-width columns */
+      gap: 20px; /* Adjust as needed for spacing between columns */
+      max-width: 1200px; /* Optional: set a maximum width for the grid */
+      width: 100%; /* Ensure the grid takes up full width of its container */
+    
+    }
+    
+    .bolddescription {
+    
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #424242;
+      font-size: 15px;
+    }
+    
+    .normaldescription {
+      font-family: sans-serif;
+      font-size: 13px;
+      line-height: 20px;
+      color: #565656;
+      grid-column: 1; /* Place in the first column */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Align text to the start of the column */
+      align-items:left;
+      margin-left: 30px;
+    }
+    
+    .picture {
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      grid-column: 2; 
+      margin-right: 30px;
+    }
+    
+    .picture img {
+      width: 200px; /* Make sure the image is responsive */
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    .rectangle1 {
+
+      background-color: #F5F5F5;
+      width: 100%;
+    }
+  }

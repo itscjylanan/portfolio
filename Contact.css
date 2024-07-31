@@ -1,0 +1,277 @@
+@charset "utf-8";
+.container {
+  display: flex;  /* Flexbox for overall layout */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.top-bar {
+  width: 100%;
+  background-color: #1F1F1F; /* Background color for the rectangle */
+  position: fixed;
+	color: #FFFFFF; 
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.wrapper {
+  margin-bottom: 120px; /* Add margin-bottom to the wrapper */
+}
+
+.text-area {
+  padding: 10px;  /* Add some padding for spacing */
+  font-family: sans-serif, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button-area {
+  flex: 1;  /* Make button area flexible to fill space */
+  display: flex;  /* Flexbox for buttons on the same line */
+  justify-content: center;  /* Center buttons horizontally */
+  margin-left: 25px;
+}
+
+button {
+  background-color: transparent;  /* Remove button background */
+  border: none;  /* Remove button border */
+  padding: 15px 10px;  /* Add some padding for text */
+  color: white;  /* Inherit text color from parent */
+  cursor: pointer;  /* Indicate clickable element */
+  margin-right: 30px;  /* Add margin between buttons */
+  font-family: sans-serif, sans-serif;
+  font-size: 12px;
+}
+
+.bold-button {
+  font-weight: bold;  /* Make this button bold */
+		cursor:default;
+}
+
+
+.content {
+
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+  animation: fadeUp 0.2s ease-in-out forwards !important;
+}
+
+.content-wrapper {
+  height: 1px;  /* Full viewport height */
+  display: flex;  /* Enable flexbox */
+  justify-content: center;  /* Center horizontally */
+  align-items: center;  /* Center vertically */
+  width: 100%;
+
+}
+
+.contactme {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+	margin-bottom: 60px;
+	margin-top: 67px;
+
+}
+
+.contact-info {
+  margin-top: 80px !important;
+  width: 800px;
+  height: 628px;
+  background-color: #F5F5F5;
+  border-radius: 20px;
+  margin: 65px auto;  /* Centers the rectangle */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.columns {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* Adjust gap as needed */
+  width: 100%;
+  margin-bottom: 60px;
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.column {
+  text-align: left;
+  font-family: sans-serif;
+	margin-top: 70px;
+}
+
+.column p {
+  margin: 5px 0;
+
+}
+
+.column p:first-child {
+  font-weight: bold;  /* Makes the first paragraph in each column bold */
+	font-size: 20px;
+	 margin: 13px 0;
+}
+
+.column p:last-child {
+  font-size: 15px;  /* Adjust the font size for the email and mobile number */
+}
+
+.social-media {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+.social-table {
+  width: 10%; /* Adjust the width of the table as needed */
+  margin: 0 auto; /* Center align the table horizontally */
+  border-collapse: collapse; /* Remove default spacing between table cells */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.social-table img {
+  display: block; /* Ensure images are block-level elements */
+  margin: 0 auto; /* Center align images within their cells */
+  width: 35px; /* Set width of the icons */
+  height: 35px; /* Maintain aspect ratio */
+}
+
+.social-table td {
+  padding: 10px; /* Add padding inside table cells */
+}
+
+.social-table td:first-child {
+  text-align: right; /* Align first column content to the right */
+}
+
+.social-table td:last-child {
+text-align: left; /* Align third column content to the left */
+  font-size: 14px; /* Adjust font size for the links */
+	line-height: 3.8; /* Adjust line height for spacing between lines */
+}
+
+.social-table td:last-child a {
+  color: #333; /* Change text color of links */
+  text-decoration: none; /* Remove underline from links */
+	font-family: sans-serif;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #606060; /* Adjust text color as needed */
+  margin-bottom: 20px;
+}
+
+.footer-line {
+  width: 80%;
+  height: 1px;
+  background-color: #B9B9B9; /* Adjust the line color as needed */
+  margin: 0 auto;
+}
+
+.footer-content {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 10px auto 0;
+  font-family: sans-serif;
+  flex-wrap: wrap; /* Ensure that elements can wrap to the next line */
+}
+
+.footer-content .left-text,
+.footer-content .right-text {
+  flex: 1;
+  font-size: 11px; /* Default font size */
+}
+
+.footer-content .left-text {
+  text-align: left;
+}
+
+.footer-content .right-text {
+  text-align: right;
+}
+
+.line {
+  background-color: #B9B9B9;  /* Set background color for the line */
+  height: 1px;            /* Set line height (thickness) */
+  width: 1286px;            /* Set line width to span full width */
+  margin: 10px 0;         /* Add some margin for spacing */
+  margin: auto;  
+}
+
+@media (max-width: 768px) {
+.contactme {
+  margin-top: 67px;
+}
+
+
+  .content {
+    display: flex;  /* Apply flexbox to the parent container */
+    flex-direction: column;  /* Ensure content stacks vertically */
+    align-items: center;  /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding-top: 0;  /* Remove top padding */
+  }
+
+  .columns {
+    grid-template-columns: 1fr; /* Switch to single-column layout on smaller screens */
+  }
+
+  .contact-info {
+    width: 400px;
+    height: 800px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    margin: 80px auto;  /* Centers the rectangle */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+    .footer-content {
+      justify-content: space-between; /* Maintain space-between even on smaller screens */
+      padding-top: 10px;
+    }
+    
+    .footer-content .left-text {
+    flex: 1 1 50%; /* Ensure each text block takes up half the width */
+      text-align: left; /* Maintain left alignment */
+        font-size: 6px; /* Default font size */
+    }
+    .footer-content .right-text {
+      flex: 1 1 50%; /* Ensure each text block takes up half the width */
+      text-align: right; /* Maintain left alignment */
+        font-size: 6px; /* Default font size */
+    }
+}
+
+/* Fade-up animation for content */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

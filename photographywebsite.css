@@ -1,0 +1,214 @@
+.photographywebsite {
+    text-align: center;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 40px;
+  }
+  
+  .photography-titledescription {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 130px;
+    }
+  
+  
+  .photography-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 50px;
+    column-gap: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  
+  .photography-image-container1 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 50px;
+    column-gap: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  
+  
+  
+  /* Hover effect for photography images */
+  /* Common styles for image containers */
+  .image-wrapper {
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #a3a3a3;
+  }
+  
+  .home-photography {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .portrait-photography {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .editorial-photography {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .about-photography {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .home-photography {
+    width: 500px;
+    height: 1103px;
+  }
+  
+  .portrait-photography {
+    width: 544px;
+    height: 1105px;
+  }
+  
+  .editorial-photography {
+    width: 500px;
+    height: 1000px;
+  }
+  
+  .about-photography {
+    width: 595px;
+    height: 1000px;
+  }
+  
+  /* Hover effect */
+  .image-wrapper:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding: 10px;
+    transition: 0.3s ease;
+  }
+  
+  .page-text {
+    font-size: 20px; /* Font size for the span */
+    display: block; /* Ensure the span text is on a new line */
+    margin-top: 5px; /* Optional: space between main text and span */
+    font-weight: normal;
+  }
+  
+  .image-wrapper:hover .home-photography {
+    filter: brightness(50%);
+    transform: scale(1.1);
+  }
+  
+  .image-wrapper:hover .portrait-photography {
+    filter: brightness(50%);
+    transform: scale(1.1);
+  }
+  
+  .image-wrapper:hover .editorial-photography {
+    filter: brightness(50%);
+    transform: scale(1.1);
+  }
+  
+  .image-wrapper:hover .about-photography {
+    filter: brightness(50%);
+    transform: scale(1.1);
+  }
+  
+  .image-wrapper:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .image-wrapper {
+    animation: mainappear linear; 
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    }
+
+    @keyframes mainappear {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+@media (max-width: 768px) {
+   /* PHOTOGRAPHY WEBSITE */
+.photography-window {
+    width: 510px;
+
+}
+
+.home-photography {
+  width: 510px;
+  height: 1125px;
+}
+
+.portrait-photography {
+  width: 510px;
+  height: 1036px;
+}
+
+.editorial-photography {
+  width: 510px;
+  height: 1020px;
+}
+
+.about-photography {
+  width: 510px;
+  height: 857px;
+}
+
+
+.photography-image-container {
+  grid-template-columns: 1fr; /* One column layout */
+  gap: 50px; /* Adjust gap for spacing between images in mobile view */
+  margin-bottom: 50px;
+  }
+
+
+.photography-image-container1 {
+  grid-template-columns: 1fr; /* One column layout */
+  gap: 50px; /* Adjust gap for spacing between images in mobile view */
+}
+
+
+
+}

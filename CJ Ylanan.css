@@ -1,0 +1,267 @@
+@charset "utf-8";
+.container {
+  display: flex;  /* Flexbox for overall layout */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.top-bar {
+  width: 100%;
+  background-color: #1F1F1F; /* Background color for the rectangle */
+  position: fixed;
+	color: #FFFFFF; 
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.wrapper {
+  margin-bottom: 120px; /* Add margin-bottom to the wrapper */
+}
+
+.text-area {
+  padding: 10px;  /* Add some padding for spacing */
+  font-family: sans-serif, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.button-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 25px;
+}
+
+button {
+  background-color: transparent;  /* Remove button background */
+  border: none;  /* Remove button border */
+  padding: 15px 10px;  /* Add some padding for text */
+  color: white;  /* Inherit text color from parent */
+  cursor: pointer;  /* Indicate clickable element */
+  margin-right: 30px;  /* Add margin between buttons */
+  font-family: sans-serif, sans-serif;
+  font-size: 12px;
+}
+
+.bold-button {
+  font-weight: bold;  /* Make this button bold */
+	cursor:default;
+}
+
+
+.portfolio-button {
+  background-color: transparent;
+  border: none;
+  padding: 15px 10px;
+  color: inherit;
+	cursor:default;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.content {
+  margin-top: 70px;
+  animation: fadeUp 0.2s ease-in-out forwards !important;
+}
+
+.content-wrapper {
+  height: 1px;  /* Full viewport height */
+  display: flex;  /* Enable flexbox */
+  justify-content: center;  /* Center horizontally */
+  align-items: center;  /* Center vertically */
+}
+
+.HI {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+
+}
+
+.computerengineer {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  opacity: 0.8;
+
+}
+
+.portrait img {
+  margin-top: 10px;
+  border-radius: 10px;
+
+}
+
+.portraitinfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;  /* Optional for vertical centering */
+  font-family: sans-serif;
+  font-size: 17.5px;
+  line-height: 1.6;
+
+}
+
+
+.rounded-stroke-button {
+  background-color: transparent; /* Remove button background */
+  border: 2px solid #0486FE;  /* Set border color */
+  padding: 18px 18px;        /* Add some padding for text */
+  color: #0486FE;            /* Set text color (blue in this case) */
+  cursor: pointer;          /* Indicate clickable element */
+  font-family: sans-serif;   /* Choose desired font */
+  font-size: 12px;           /* Set font size */
+  border-radius: 30px;       /* Set rounded corner radius */
+  display: inline-flex;
+  transition: all 0.2s ease-in-out; /* Add transition for smooth hover effect */
+  text-decoration: none;
+  justify-content: center;
+
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+}
+.rounded-stroke-button:hover {
+  background-color: #0486FE; /* Change background color on hover */
+  color: white;             /* Change text color to white on hover */
+}
+
+/* Blurring effect */
+.blurred {
+  filter: blur(5px); /* Adjust the blur radius as needed */
+  transition: filter 0.3s ease;
+}
+
+.content.blurred {
+  /* Existing styles */
+  transition: filter 0.3s ease; /* Smooth blur effect */
+}
+
+/* Fade-up animation for content */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #606060; /* Adjust text color as needed */
+	margin-bottom: 20px;
+}
+
+.footer-line {
+  width: 80%;
+  height: 1px;
+  background-color: #B9B9B9; /* Adjust the line color as needed */
+  margin: 0 auto;
+}
+
+.footer-content {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 10px auto 0;
+  font-family: sans-serif;
+  flex-wrap: wrap; /* Ensure that elements can wrap to the next line */
+}
+
+.footer-content .left-text,
+.footer-content .right-text {
+  flex: 1;
+	font-size: 11px; /* Default font size */
+}
+
+.footer-content .left-text {
+  text-align: left;
+}
+
+.footer-content .right-text {
+  text-align: right;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+
+	.content {
+
+		margin-top: 70px;  /* Add top padding to account for fixed top-bar */
+	}
+
+  .HI {
+    font-size: 40px;
+  
+  }
+  
+  .computerengineer {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    opacity: 0.8;
+   
+  }
+  
+  .portraitinfo {
+    font-size: 17.5px;
+  }
+
+  .modal {
+    transform: scale(1.5);
+  }
+  
+	.modal-content {
+    width: 300px !important; /* Adjust the width percentage as needed */
+    margin: 70% auto!important; /* Adjust top margin for better positioning */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .modal-title {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .modal-links a {
+    font-size: 12px; /* Adjust font size */
+  }
+
+  .close-icon {
+    width: 13px !important; /* Adjust the width of the close icon */
+    height: 13px !important; /* Maintain aspect ratio */
+  }
+
+  .footer-content {
+    justify-content: space-between; /* Maintain space-between even on smaller screens */
+	  padding-top: 10px;
+  }
+  
+	.footer-content .left-text {
+	flex: 1 1 50%; /* Ensure each text block takes up half the width */
+    text-align: left; /* Maintain left alignment */
+	    font-size: 5px; /* Default font size */
+	}
+  .footer-content .right-text {
+    flex: 1 1 50%; /* Ensure each text block takes up half the width */
+    text-align: right; /* Maintain left alignment */
+	    font-size: 5px; /* Default font size */
+  }
+}
