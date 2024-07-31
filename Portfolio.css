@@ -297,52 +297,42 @@ font-family: sans-serif; /* Replace with your chosen font */
 
 /* Place images in a specific pattern */
 .logo-images img:nth-child(1) { grid-row: 1 / 2; grid-column: 1; 
-  -webkit-animation: appear linear !important;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .logo-images img:nth-child(2) { grid-row: 1 / 2; grid-column: 2; 
-  -webkit-animation: appear linear !important;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .logo-images img:nth-child(3) { grid-row: 2 / 3; grid-column: 1; 
-  -webkit-animation: appear linear !important;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;}
 .logo-images img:nth-child(4) { grid-row: 2 / 3; grid-column: 2; 
-  -webkit-animation: appear linear !important;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;}
 .logo-images img:nth-child(5) { grid-row: 3 / 4; grid-column: 1; 
-  -webkit-animation: appear linear !important;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;}
 .logo-images img:nth-child(6) { grid-row: 3 / 4; grid-column: 2; 
-  -webkit-animation: appear linear !important;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;}
 .logo-images img:nth-child(7) { grid-row: 4 / 5; grid-column: 1; 
-  -webkit-animation: appear linear !important;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;}
 .logo-images img:nth-child(8) { grid-row: 4 / 5; grid-column: 2; 
-  -webkit-animation: appear linear !important;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;}
 .logo-images img:nth-child(9) { grid-row: 5 / 6; grid-column: 1; 
-  -webkit-animation: appear linear !important;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;}
 .logo-images img:nth-child(10) { grid-row: 5 / 6; grid-column: 2; 
-  -webkit-animation: appear linear !important;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;}
@@ -366,52 +356,42 @@ font-family: sans-serif; /* Replace with your chosen font */
 
 /* Place images in a specific pattern */
 .social-images img:nth-child(1) { grid-row: 1 / 2; grid-column: 1; 
-  -webkit-animation: appear linear !important;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(2) { grid-row: 1 / 2; grid-column: 2; 
-  -webkit-animation: appear linear !important;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(3) { grid-row: 2 / 3; grid-column: 1; 
-  -webkit-animation: appear linear !important;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(4) { grid-row: 2 / 3; grid-column: 2; 
-  -webkit-animation: appear linear !important;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(5) { grid-row: 3 / 4; grid-column: 1; 
-  -webkit-animation: appear linear !important;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(6) { grid-row: 3 / 4; grid-column: 2; 
-  -webkit-animation: appear linear !important;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(7) { grid-row: 4 / 5; grid-column: 1; 
-  -webkit-animation: appear linear !important;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(8) { grid-row: 4 / 5; grid-column: 2; 
-  -webkit-animation: appear linear !important;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(9) { grid-row: 5 / 6; grid-column: 1; 
-  -webkit-animation: appear linear !important;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(10) { grid-row: 5 / 6; grid-column: 2; 
-  -webkit-animation: appear linear !important;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
@@ -577,28 +557,6 @@ font-family: sans-serif; /* Replace with your chosen font */
 }
 
 @keyframes appear {
-  from {
-    opacity: 0;
-    scale: 0.5;
-  }
-  to {
-    opacity: 1;
-    scale: 1;
-  }
-}
-
-@-webkit-keyframes fadeUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes appear {
   from {
     opacity: 0;
     scale: 0.5;
