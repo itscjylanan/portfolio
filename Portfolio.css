@@ -149,25 +149,6 @@ font-family: sans-serif; /* Replace with your chosen font */
   cursor: pointer;
 }
 
-/* LOGO BACK WINDOW */
-.logo-image {
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-  margin-right: 5px;
-}
-
-.logo-back {
-  margin-bottom: 70px;
-}
-
-.logoback-icon {
-  font-family: sans-serif; /* Replace with your chosen font */
-  font-size: 20px; /* Adjust size as needed */
-  font-weight: bold; /* Adjust weight if needed */
-  cursor: pointer;
-}
-
 /*FOLDER BACK WINDOW*/
 
 .folderback-button {
@@ -296,53 +277,345 @@ font-family: sans-serif; /* Replace with your chosen font */
 }
 
 /* Place images in a specific pattern */
-.logo-images img:nth-child(1) { grid-row: 1 / 2; grid-column: 1; 
-  animation: appear linear; 
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%; }
-.logo-images img:nth-child(2) { grid-row: 1 / 2; grid-column: 2; 
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%; }
-.logo-images img:nth-child(3) { grid-row: 2 / 3; grid-column: 1; 
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;}
-.logo-images img:nth-child(4) { grid-row: 2 / 3; grid-column: 2; 
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;}
-.logo-images img:nth-child(5) { grid-row: 3 / 4; grid-column: 1; 
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;}
-.logo-images img:nth-child(6) { grid-row: 3 / 4; grid-column: 2; 
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;}
-.logo-images img:nth-child(7) { grid-row: 4 / 5; grid-column: 1; 
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;}
-.logo-images img:nth-child(8) { grid-row: 4 / 5; grid-column: 2; 
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;}
-.logo-images img:nth-child(9) { grid-row: 5 / 6; grid-column: 1; 
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;}
-.logo-images img:nth-child(10) { grid-row: 5 / 6; grid-column: 2; 
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;}
+.logo-images img:nth-child(1) { grid-row: 1 / 2; grid-column: 1; }
+.logo-images img:nth-child(2) { grid-row: 1 / 2; grid-column: 2; }
+.logo-images img:nth-child(3) { grid-row: 2 / 3; grid-column: 1; }
+.logo-images img:nth-child(4) { grid-row: 2 / 3; grid-column: 2; }
+.logo-images img:nth-child(5) { grid-row: 3 / 4; grid-column: 1; }
+.logo-images img:nth-child(6) { grid-row: 3 / 4; grid-column: 2; }
+.logo-images img:nth-child(7) { grid-row: 4 / 5; grid-column: 1; }
+.logo-images img:nth-child(8) { grid-row: 4 / 5; grid-column: 2; }
+.logo-images img:nth-child(9) { grid-row: 5 / 6; grid-column: 1; }
+.logo-images img:nth-child(10) { grid-row: 5 / 6; grid-column: 2; }
 
 .logo-images img {
   width: 670px;
   height: 670px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+}
+
+
+.logo-image {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.logo-back {
+  margin-bottom: 70px;
+}
+
+.logoback-icon {
+  font-family: sans-serif; /* Replace with your chosen font */
+  font-size: 20px; /* Adjust size as needed */
+  font-weight: bold; /* Adjust weight if needed */
+  cursor: pointer;
+}
+
+/* Logo1 Parameters */
+
+.logo1 {
+  width: 670px;
+  height: 1000px;
+  background-color: #F5F5F5;
   border-radius: 10px;
   border: 1px solid #a3a3a3;
+  -webkit-animation: appear linear;
+  animation: appear linear; 
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%; 
 }
+
+.logo1-description {
+  padding-left: 45px;
+  padding-right: 45px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 25px;;
+}
+
+.logo1-description1 {
+  padding-left: 45px;
+  padding-right: 45px;
+  font-family: sans-serif;
+  line-height: 30px;
+}
+
+  /* Logo2 Parameters */
+
+  .logo2 {
+      width: 670px;
+      height: 1000px;
+      background-color: #F5F5F5;
+      border-radius: 10px;
+      border: 1px solid #a3a3a3;
+      -webkit-animation: appear linear;
+      animation: appear linear; 
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%; 
+    }
+  
+    .logo2-description {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      font-weight: bold;
+      margin-top: 50px;
+      margin-bottom: 25px;;
+    }
+  
+    .logo2-description1 {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      line-height: 30px;
+    }
+
+     /* Logo3 Parameters */
+
+  .logo3 {
+      width: 670px;
+      height: 1000px;
+      background-color: #F5F5F5;
+      border-radius: 10px;
+      border: 1px solid #a3a3a3;
+      -webkit-animation: appear linear;
+      animation: appear linear; 
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%; 
+    }
+  
+    .logo3-description {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      font-weight: bold;
+      margin-top: 50px;
+      margin-bottom: 25px;;
+    }
+  
+    .logo3-description1 {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      line-height: 30px;
+    }
+
+           /* Logo4 Parameters */
+
+  .logo4 {
+      width: 670px;
+      height: 1000px;
+      background-color: #F5F5F5;
+      border-radius: 10px;
+      border: 1px solid #a3a3a3;
+      -webkit-animation: appear linear;
+      animation: appear linear; 
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%; 
+    }
+  
+    .logo4-description {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      font-weight: bold;
+      margin-top: 50px;
+      margin-bottom: 25px;;
+    }
+  
+    .logo4-description1 {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      line-height: 30px;
+    }
+
+           /* Logo5 Parameters */
+
+  .logo5 {
+      width: 670px;
+      height: 1000px;
+      background-color: #F5F5F5;
+      border-radius: 10px;
+      border: 1px solid #a3a3a3;
+      -webkit-animation: appear linear;
+      animation: appear linear; 
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%; 
+    }
+  
+    .logo5-description {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      font-weight: bold;
+      margin-top: 50px;
+      margin-bottom: 25px;;
+    }
+  
+    .logo5-description1 {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      line-height: 30px;
+    }
+
+           /* Logo6 Parameters */
+
+  .logo6 {
+      width: 670px;
+      height: 1000px;
+      background-color: #F5F5F5;
+      border-radius: 10px;
+      border: 1px solid #a3a3a3;
+      -webkit-animation: appear linear;
+      animation: appear linear; 
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%; 
+    }
+  
+    .logo6-description {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      font-weight: bold;
+      margin-top: 50px;
+      margin-bottom: 25px;;
+    }
+  
+    .logo6-description1 {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      line-height: 30px;
+    }
+
+  /* Logo7 Parameters */
+
+  .logo7 {
+      width: 670px;
+      height: 1000px;
+      background-color: #F5F5F5;
+      border-radius: 10px;
+      border: 1px solid #a3a3a3;
+      -webkit-animation: appear linear;
+      animation: appear linear; 
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%; 
+    }
+  
+    .logo7-description {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      font-weight: bold;
+      margin-top: 50px;
+      margin-bottom: 25px;;
+    }
+  
+    .logo7-description1 {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      line-height: 30px;
+    }
+
+           /* Logo8 Parameters */
+
+  .logo8 {
+      width: 670px;
+      height: 1000px;
+      background-color: #F5F5F5;
+      border-radius: 10px;
+      border: 1px solid #a3a3a3;
+      -webkit-animation: appear linear;
+      animation: appear linear; 
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%; 
+    }
+  
+    .logo8-description {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      font-weight: bold;
+      margin-top: 50px;
+      margin-bottom: 25px;;
+    }
+  
+    .logo8-description1 {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      line-height: 30px;
+    }
+
+/* Logo9 Parameters */
+
+      .logo9 {
+      width: 670px;
+      height: 1000px;
+      background-color: #F5F5F5;
+      border-radius: 10px;
+      border: 1px solid #a3a3a3;
+      -webkit-animation: appear linear;
+      animation: appear linear; 
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%; 
+      }
+          
+      .logo9-description {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      font-weight: bold;
+      margin-top: 50px;
+      margin-bottom: 25px;;
+      }
+          
+      .logo9-description1 {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      line-height: 30px;
+      }
+
+
+/* Logo10 Parameters */
+
+.logo10 {
+  width: 670px;
+  height: 1000px;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  border: 1px solid #a3a3a3;
+  -webkit-animation: appear linear;
+  animation: appear linear; 
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%; 
+  }
+      
+  .logo10-description {
+  padding-left: 45px;
+  padding-right: 45px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 25px;;
+  }
+      
+  .logo10-description1 {
+  padding-left: 45px;
+  padding-right: 45px;
+  font-family: sans-serif;
+  line-height: 30px;
+  }
+
 
 /*SOCIAL MEDIA GRAPHICS Images*/
 
@@ -356,42 +629,52 @@ font-family: sans-serif; /* Replace with your chosen font */
 
 /* Place images in a specific pattern */
 .social-images img:nth-child(1) { grid-row: 1 / 2; grid-column: 1; 
+  -webkit-animation: appear linear;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(2) { grid-row: 1 / 2; grid-column: 2; 
+  -webkit-animation: appear linear;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(3) { grid-row: 2 / 3; grid-column: 1; 
+  -webkit-animation: appear linear;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(4) { grid-row: 2 / 3; grid-column: 2; 
+  -webkit-animation: appear linear;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(5) { grid-row: 3 / 4; grid-column: 1; 
+  -webkit-animation: appear linear;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(6) { grid-row: 3 / 4; grid-column: 2; 
+  -webkit-animation: appear linear;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(7) { grid-row: 4 / 5; grid-column: 1; 
+  -webkit-animation: appear linear;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(8) { grid-row: 4 / 5; grid-column: 2; 
+  -webkit-animation: appear linear;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(9) { grid-row: 5 / 6; grid-column: 1; 
+  -webkit-animation: appear linear;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
 .social-images img:nth-child(10) { grid-row: 5 / 6; grid-column: 2; 
+  -webkit-animation: appear linear;
   animation: appear linear; 
   animation-timeline: view();
   animation-range: entry 0% cover 40%; }
@@ -439,16 +722,19 @@ font-family: sans-serif; /* Replace with your chosen font */
 .websection {
   margin-bottom: 70px;
   animation: fadeUp 0.2s ease-in-out forwards;
+  -webkit-animation: fadeUp 0.2s ease-in-out forwards;
 }
 
 .logosection {
   margin-bottom: 70px;
+  -webkit-animation: fadeUp 0.2s ease-in-out forwards;
   animation: fadeUp 0.2s  ease-in-out forwards;
   animation-delay: 0.1s;
 }
 
 .smgsection {
   margin-bottom: 70px;
+  -webkit-animation: fadeUp 0.2s ease-in-out forwards;
   animation: fadeUp 0.2s  ease-in-out forwards;
   animation-delay: 0.2s;
 }
@@ -567,6 +853,29 @@ font-family: sans-serif; /* Replace with your chosen font */
   }
 }
 
+@-webkit-keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
 
@@ -586,6 +895,19 @@ font-family: sans-serif; /* Replace with your chosen font */
     width: 510px;
     height: 510px;
   }
+
+  .logo1, .logo2, .logo3, .logo4, .logo5, .logo6, .logo7, .logo8, .logo9, .logo10 {
+    width: 510px;
+    height: 920px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid #a3a3a3;
+    -webkit-animation: appear linear;
+    animation: appear linear; 
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%; 
+  }
+
 .social-media-window {
   width: 510px;
 }
