@@ -219,6 +219,13 @@ font-family: sans-serif; /* Replace with your chosen font */
   cursor: pointer;
 }
 
+.landingpage-back-icon {
+  font-family: sans-serif; /* Replace with your chosen font */
+  font-size: 20px; /* Adjust size as needed */
+  font-weight: bold; /* Adjust weight if needed */
+  cursor: pointer;
+}
+
 .back-image {
   width: 15px;
   height: 15px;
@@ -239,6 +246,10 @@ font-family: sans-serif; /* Replace with your chosen font */
 }
 
 .travel-back {
+  margin-bottom: 70px;
+}
+
+.landingpage-back {
   margin-bottom: 70px;
 }
 
@@ -266,6 +277,10 @@ font-family: sans-serif; /* Replace with your chosen font */
   font-family: sans-serif;
 }
 
+.landingpage-folder {
+  font-family: sans-serif;
+}
+
 /*LOGO Images*/
 
 .logo-images {
@@ -287,6 +302,7 @@ font-family: sans-serif; /* Replace with your chosen font */
 .logo-images img:nth-child(8) { grid-row: 4 / 5; grid-column: 2; }
 .logo-images img:nth-child(9) { grid-row: 5 / 6; grid-column: 1; }
 .logo-images img:nth-child(10) { grid-row: 5 / 6; grid-column: 2; }
+.logo-images img:nth-child(11) { grid-row: 6 / 7; grid-column: 1; }
 
 .logo-images img {
   width: 670px;
@@ -586,36 +602,65 @@ font-family: sans-serif; /* Replace with your chosen font */
       }
 
 
-/* Logo10 Parameters */
+    /* Logo10 Parameters */
 
-.logo10 {
-  width: 670px;
-  height: 1000px;
-  background-color: #F5F5F5;
-  border-radius: 10px;
-  border: 1px solid #a3a3a3;
-  -webkit-animation: appear linear;
-  animation: appear linear; 
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%; 
-  }
-      
-  .logo10-description {
-  padding-left: 45px;
-  padding-right: 45px;
-  font-family: sans-serif;
-  font-weight: bold;
-  margin-top: 40px;
-  margin-bottom: 25px;;
-  }
-      
-  .logo10-description1 {
-  padding-left: 45px;
-  padding-right: 45px;
-  font-family: sans-serif;
-  line-height: 30px;
-  }
+    .logo10 {
+      width: 670px;
+      height: 1000px;
+      background-color: #F5F5F5;
+      border-radius: 10px;
+      border: 1px solid #a3a3a3;
+      -webkit-animation: appear linear;
+      animation: appear linear; 
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%; 
+      }
+          
+      .logo10-description {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      font-weight: bold;
+      margin-top: 40px;
+      margin-bottom: 25px;;
+      }
+          
+      .logo10-description1 {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      line-height: 30px;
+      }
 
+          /* Logo11 Parameters */
+
+    .logo11 {
+      width: 670px;
+      height: 1000px;
+      background-color: #F5F5F5;
+      border-radius: 10px;
+      border: 1px solid #a3a3a3;
+      -webkit-animation: appear linear;
+      animation: appear linear; 
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%; 
+      }
+          
+      .logo11-description {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      font-weight: bold;
+      margin-top: 40px;
+      margin-bottom: 25px;;
+      }
+          
+      .logo11-description1 {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-family: sans-serif;
+      line-height: 30px;
+      }
 
 /*SOCIAL MEDIA GRAPHICS Images*/
 
@@ -830,6 +875,10 @@ font-family: sans-serif; /* Replace with your chosen font */
     animation: fadeUp 0.2s;
   }
 
+  .landingpage-window {
+    animation: fadeUp 0.2s;
+  }
+
 /* Fade-up animation for content */
 @keyframes fadeUp {
   0% {
@@ -896,7 +945,7 @@ font-family: sans-serif; /* Replace with your chosen font */
     height: 510px;
   }
 
-  .logo1, .logo2, .logo3, .logo4, .logo5, .logo6, .logo7, .logo8, .logo9, .logo10 {
+  .logo1, .logo2, .logo3, .logo4, .logo5, .logo6, .logo7, .logo8, .logo9, .logo10, .logo11 {
     width: 510px;
     height: 920px;
     background-color: #F5F5F5;

@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const travelWindow = document.querySelector('.travel-window');
     const logosWindow = document.querySelector('.logos-window');
     const socialMediaWindow = document.querySelector('.social-media-window');
+    const landingpageWindow = document.querySelector('.landingpage-window');
   
     const showWindow = (windowToShow) => {
       mainWindow.classList.add('hidden');
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       musicianWindow.classList.add('hidden');
       businessWindow.classList.add('hidden');
       travelWindow.classList.add('hidden');
+      landingpageWindow.classList.add('hidden');
       logosWindow.classList.add('hidden');
       socialMediaWindow.classList.add('hidden');
       windowToShow.classList.remove('hidden');
@@ -30,12 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.musician-folder').addEventListener('click', () => showWindow(musicianWindow));
     document.querySelector('.business-folder').addEventListener('click', () => showWindow(businessWindow));
     document.querySelector('.travel-folder').addEventListener('click', () => showWindow(travelWindow));
+    document.querySelector('.landingpage-folder').addEventListener('click', () => showWindow(landingpageWindow));
   
     // Specific back button event listeners
     document.querySelector('.photography-back-icon').addEventListener('click', () => showWindow(folderWindow));
     document.querySelector('.musician-back-icon').addEventListener('click', () => showWindow(folderWindow));
     document.querySelector('.business-back-icon').addEventListener('click', () => showWindow(folderWindow));
     document.querySelector('.travel-back-icon').addEventListener('click', () => showWindow(folderWindow));
+    document.querySelector('.landingpage-back-icon').addEventListener('click', () => showWindow(folderWindow));
   
     document.querySelector('.logoback-icon').addEventListener('click', () => showWindow(mainWindow));
     document.querySelector('.smgback-icon').addEventListener('click', () => showWindow(mainWindow));
@@ -94,7 +98,7 @@ document.querySelector('.smgpreview-icon').addEventListener('click', function() 
 });
 
 // Get all target elements
-const images = document.querySelectorAll('.home-photography, .portrait-photography, .editorial-photography, .about-photography, .home-musician, .music-musician, .video-musician, .home-business, .popup-business, .checkout-business, .signin-business, .davao, .siargao');
+const images = document.querySelectorAll('.home-photography, .portrait-photography, .editorial-photography, .about-photography, .home-musician, .music-musician, .video-musician, .home-business, .popup-business, .checkout-business, .signin-business, .davao, .siargao, .landingpage');
 
 // Function to toggle overlay visibility
 function toggleOverlay(image) {
