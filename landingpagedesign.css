@@ -32,10 +32,24 @@
     overflow: hidden;
     border-radius: 10px;
     border: 1px solid #a3a3a3;
-    
+    margin-bottom: 20px;
   }
   
   .landingpage {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transition for hover effect */
+  }
+
+  .landingpagebtd {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transition for hover effect */
+  }
+
+  .landingpagelmd {
     display: block;
     width: 100%;
     height: auto;
@@ -69,6 +83,16 @@
     filter: brightness(50%);
     transform: scale(1.1);
   }
+
+  .landingpage-image-wrapper:hover .landingpagebtd {
+    filter: brightness(50%);
+    transform: scale(1.1);
+  }
+
+  .landingpage-image-wrapper:hover .landingpagelmd {
+    filter: brightness(50%);
+    transform: scale(1.1);
+  }
   
   
   .landingpage-image-wrapper:hover .overlay {
@@ -81,6 +105,15 @@
       height: 4296px;
   }
 
+	.landingpagebtd {
+	  width: 1316px;
+      height: 3892px;	
+  }
+		
+	.landingpagelmd {
+	  width: 1316px;
+      height: 3576px;	
+  }
 
 
     @media (max-width: 768px) {
@@ -94,6 +127,17 @@
       width: 510px;
       height: 1665px;
   }
+
+	.landingpagebtd {
+	  width: 510px;
+      height: 1508px;	
+  }
+		
+	.landingpagelmd {
+	  width: 510px;
+      height: 1386px;	
+  }
+		
     
     
     .landingpage-image-container {
