@@ -45,14 +45,14 @@
     
   }
   
-  .davao {
+  .thailand {
     display: block;
     width: 100%;
     height: auto;
     transition: transform 0.3s ease, filter 0.3s ease; /* Transition for hover effect */
   }
   
-  .siargao {
+  .thailand1 {
     display: block;
     width: 100%;
     height: auto;
@@ -82,12 +82,12 @@
     font-weight: normal;
   }
   
-  .travel-image-wrapper:hover .davao {
+  .travel-image-wrapper:hover .thailand {
     filter: brightness(50%);
     transform: scale(1.1);
   }
   
-  .travel-image-wrapper:hover .siargao {
+  .travel-image-wrapper:hover .thailand1 {
     filter: brightness(50%);
     transform: scale(1.1);
   }
@@ -97,14 +97,14 @@
     opacity: 1;
   }
   
-  .davao {
+  .thailand {
       width: 1316px;
-      height: 850px;
+      height: 877px;
   }
   
-  .siargao {
+  .thailand1 {
       width: 1316px;
-      height: 850px;
+      height: 877px;
   }
 
   .travel-image-wrapper {
@@ -133,12 +133,12 @@
   
     .davao {
       width: 510px;
-      height: 329px;
+      height: 340px;
   }
   
     .siargao {
       width: 510px;
-      height: 329px;
+      height: 340px;
   }
     
     
